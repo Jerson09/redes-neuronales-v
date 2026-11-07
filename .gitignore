@@ -1,0 +1,11 @@
+# Fotografías personales: nunca se publican
+dataset/
+*.zip
+raw/
+processed/
+
+# Modelos y cachés
+*.keras
+*.h5
+__pycache__/
+.ipynb_checkpoints/
