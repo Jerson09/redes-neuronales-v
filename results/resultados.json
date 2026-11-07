@@ -1,0 +1,70 @@
+{
+  "fecha": "2026-11-07 16:20",
+  "tensorflow": "2.21.0",
+  "keras": "3.13.2",
+  "hiperparametros": {
+    "IMG_SIZE": 160,
+    "EMB_DIM": 128,
+    "MARGIN": 0.4,
+    "BATCH_SIZE": 32,
+    "EPOCHS_ejecutadas": 14,
+    "LR": 0.0001,
+    "FINE_TUNE_FROM": 100
+  },
+  "dataset_propio": {
+    "personas": 2,
+    "imagenes_validas": 4,
+    "descartadas": 0
+  },
+  "lfw": {
+    "train_imgs": 3870,
+    "val_imgs": 454
+  },
+  "entrenamiento_final": {
+    "loss": 0.0129,
+    "triplet_acc": 0.9917,
+    "val_loss": 0.1249,
+    "val_triplet_acc": 0.8766,
+    "learning_rate": 0.0
+  },
+  "umbral_tau": 1.4083,
+  "verificacion_dataset_propio": {
+    "Línea base ImageNet": {
+      "AUC": 1.0,
+      "exactitud": 1.0,
+      "TAR (sensibilidad)": 1.0,
+      "FAR (falsa aceptación)": 0.0,
+      "pares_misma": 2.0,
+      "pares_distinta": 4.0
+    },
+    "Siamesa + Triplet Loss": {
+      "AUC": 1.0,
+      "exactitud": 1.0,
+      "TAR (sensibilidad)": 1.0,
+      "FAR (falsa aceptación)": 0.0,
+      "pares_misma": 2.0,
+      "pares_distinta": 4.0
+    }
+  },
+  "few_shot": [
+    {
+      "k (fotos de registro)": 1,
+      "modelo": "Línea base ImageNet",
+      "exactitud": 1.0,
+      "desv": 0.0
+    },
+    {
+      "k (fotos de registro)": 1,
+      "modelo": "Siamesa + Triplet Loss",
+      "exactitud": 1.0,
+      "desv": 0.0
+    }
+  ],
+  "conjunto_abierto": [
+    {
+      "k": 1,
+      "rechazo correcto de desconocidos": 1.0,
+      "aceptación+identificación correcta": 1.0
+    }
+  ]
+}
